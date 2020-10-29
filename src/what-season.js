@@ -6,6 +6,7 @@ module.exports = function getSeason(date) {
   } else if (Date.prototype.toString.call(date) === undefined) {
     throw new Error('Error');
   }
+  
   const m = date.getMonth();
   switch (m) {
     case 11:
